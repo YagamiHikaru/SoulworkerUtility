@@ -525,8 +525,8 @@ namespace ResDecoder
         uint i4;
         uint i5;
         uint i6;
-        uint i7;
-        uint i8;
+        uint i7; // for Chii
+        uint i8; // for Ephnel
 
         override public void Read(FileStream fs)
         {
@@ -540,7 +540,7 @@ namespace ResDecoder
             i5 = GetUint(fs);
             i6 = GetUint(fs);
             i7 = GetUint(fs);
-            //i8 = GetUint(fs);
+            i8 = GetUint(fs);
         }
 
         override public void Write(StringBuilder sb)
@@ -555,7 +555,7 @@ namespace ResDecoder
             sb.AppendLine($"NUM7={i5}");
             sb.AppendLine($"NUM8={i6}");
             sb.AppendLine($"NUM9={i7}");
-            //sb.AppendLine($"NUM10={i8}");
+            sb.AppendLine($"NUM10={i8}");
 
             // 換行
             sb.AppendLine("");
