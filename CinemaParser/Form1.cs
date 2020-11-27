@@ -105,9 +105,9 @@ namespace CinemaParser
                     string filename = $"副本內劇情{name}.txt";
                     foreach (var xmlFilename in pcXmlFile.Value)
                     {
-                        //Debug.WriteLine($"{xmlFilename}");
-                        //if(xmlFilename == @"")
-                        //   Debug.WriteLine($"{xmlFilename}");
+                        Debug.WriteLine($"{xmlFilename}");
+                        //if (xmlFilename.IndexOf("CT_DawnOfFate_PC_A.xml") != -1)
+                        //    Debug.WriteLine($"{xmlFilename}");
                         StringBuilder writer = new StringBuilder("");
                         var levelname = GetLevelName(xmlFilename);
                         var cinemaPC = GetData<Cinematalk_Test>(xmlFilename);
@@ -153,6 +153,7 @@ namespace CinemaParser
             pcFiles.Add("PC_E", allFiles.Where(o => (o.IndexOf("PC_E") != -1)).ToArray());
             pcFiles.Add("PC_F", allFiles.Where(o => (o.IndexOf("PC_F") != -1)).ToArray());
             pcFiles.Add("PC_G", allFiles.Where(o => (o.IndexOf("PC_G") != -1)).ToArray());
+            pcFiles.Add("PC_H", allFiles.Where(o => (o.IndexOf("PC_H") != -1)).ToArray());
             return pcFiles;
         }
 
@@ -183,7 +184,8 @@ namespace CinemaParser
                         (PC == "PC_D") ? sentencesList[line.SituationStringStep01_ID].PC_D :
                         (PC == "PC_E") ? sentencesList[line.SituationStringStep01_ID].PC_E :
                         (PC == "PC_F") ? sentencesList[line.SituationStringStep01_ID].PC_F :
-                        sentencesList[line.SituationStringStep01_ID].PC_G;
+                        (PC == "PC_G") ? sentencesList[line.SituationStringStep01_ID].PC_G :
+                        sentencesList[line.SituationStringStep01_ID].PC_H;
 
                     string str = $"{character}({face}):{sentence}";
                     var nEpisodeNumber = line.Maze_EpisodeNumber;

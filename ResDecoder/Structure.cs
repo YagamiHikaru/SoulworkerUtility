@@ -304,20 +304,20 @@ namespace ResDecoder
 
     public class TbClassSpeech : ResReader
     {
-        uint[] i = new uint[44];
+        uint[] i = new uint[50];
 
         override public void Read(FileStream fs)
         {
             int k = 1;
+            for (int j = 1; j <= 9; j++)
+                i[k++] = GetUint(fs);
+            for (int j = 1; j <= 16; j++)
+                i[k++] = GetByte(fs);
             for (int j = 1; j <= 8; j++)
                 i[k++] = GetUint(fs);
-            for (int j = 1; j <= 14; j++)
+            for (int j = 1; j <= 8; j++)
                 i[k++] = GetByte(fs);
-            for (int j = 9; j <= 15; j++)
-                i[k++] = GetUint(fs);
-            for (int j = 15; j <= 21; j++)
-                i[k++] = GetByte(fs);
-            for (int j = 16; j <= 22; j++)
+            for (int j = 1; j <= 8; j++)
                 i[k++] = GetUint(fs);
         }
 
@@ -327,7 +327,7 @@ namespace ResDecoder
             sb.AppendLine($"ID={i[1]}");
             //for (int j = 2; j <= 43; j++)
             //    sb.AppendLine($"NUM {k++}={i[j]}");
-            for (int j = 2; j <= 43; j++)
+            for (int j = 2; j <= 49; j++)
                 sb.AppendLine($"{i[j]}");
 
             // 換行

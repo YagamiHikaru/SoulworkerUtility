@@ -172,6 +172,7 @@ namespace TitleParser
             sw.WriteLine($"</head>");
             sw.WriteLine($"<body>");
             sw.WriteLine($"<table cellpadding=\"3\" border = '1'>");
+            sw.WriteLine($"<tr><td>ID</td><td>腳色</td><td>稱號</td><td>描述</td><td>獲得方法</td><td>屬性</td></tr>");
         }
 
         public void WriteTail(StreamWriter sw)
