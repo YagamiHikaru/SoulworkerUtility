@@ -15,7 +15,7 @@ namespace SkillParser
     {
         string mInfoFile = "tb_Skill_Script.txt";
         string mParamFile = "tb_Skill.txt";
-        List<string> mCharactorList = new List<string>() { "哈露", "歐文", "莉莉", "金", "史黛菈", "伊莉絲", "琪", "Ephnel" };
+        List<string> mCharactorList = new List<string>() { "哈露", "歐文", "莉莉", "金", "史黛菈", "伊莉絲", "琪", "艾芙妮爾", "李娜飛" };
 
         public Form1()
         {
