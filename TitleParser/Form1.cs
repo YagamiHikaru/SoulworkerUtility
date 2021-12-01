@@ -21,7 +21,7 @@ namespace TitleParser
             {
                 textBox1.Text = value;
                 mTitleInfoFileName = Path.Combine(mInputPath, "Tb_Title_Info.txt");
-                mTitleStringFileName = Path.Combine(mInputPath, "tb_Title_String.txt");
+                mTitleStringFileName = Path.Combine(mInputPath, "tb_Title_String_TWN.txt");
             }
         }
 
@@ -67,7 +67,7 @@ namespace TitleParser
                     throw new System.InvalidOperationException($"輸出目錄不可為空");
 
                 mTitleInfoFileName = Path.Combine(mInputPath, "Tb_Title_Info.txt");
-                mTitleStringFileName = Path.Combine(mInputPath, "tb_Title_String.txt");
+                mTitleStringFileName = Path.Combine(mInputPath, "tb_Title_String_TWN.txt");
 
                 if (!File.Exists(mTitleInfoFileName))
                     throw new System.InvalidOperationException($"{mTitleInfoFileName} 檔案不存在");
@@ -127,7 +127,9 @@ namespace TitleParser
                             (titleInfo.str[2] == "3") ? "莉莉" :
                             (titleInfo.str[2] == "4") ? "金" :
                             (titleInfo.str[2] == "5") ? "史黛菈" :
-                        (titleInfo.str[2] == "6") ? "伊莉絲" : "琪";
+                            (titleInfo.str[2] == "6") ? "伊莉絲" : 
+                            (titleInfo.str[2] == "7") ? "琪" :
+                            (titleInfo.str[2] == "8") ? "艾芙妮爾" : "李娜飛";
                     }
                     method.WriteCharacter(sw, name);
 

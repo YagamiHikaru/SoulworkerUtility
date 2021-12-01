@@ -37,120 +37,120 @@ namespace ResDecoder
             Envirment.NumberOfCharacter = Convert.ToInt32(numericUpDown1.Value);
 
             // for tb_Achievement_Script.res
-            ProcessFile(iPath, oPath, "tb_Achievement_Script_TWN", new TbAchievementScript());
+            ProcessFile<TbAchievementScript>(iPath, oPath, "tb_Achievement_Script_TWN");
 
             // for tb_Akashic_Parts.res
-            //ProcessFile(path, "tb_Akashic_Parts", new TbAkashicParts());
+            //ProcessFile<TbAkashicParts>(iPath, oPath, "tb_Akashic_Parts");
 
             // for tb_Appearance.res
-            //ProcessFile(path, "tb_Appearance", new TbAppearance());
+            //ProcessFile<TbAppearance>(iPath, oPath, "tb_Appearance");
 
             // for tb_Booster.res
-            ProcessFile(iPath, oPath, "tb_Booster", new TbBooster());
+            ProcessFile<TbBooster>(iPath, oPath, "tb_Booster");
 
             // for tb_Booster_Script.res
-            //ProcessFile(iPath, oPath, "tb_Booster_Script", new TbBoosterScript());
+            //ProcessFile<TbBoosterScript>(iPath, oPath, "tb_Booster_Script");
 
             // for tb_Buff_Script.res
-            ProcessFile(iPath, oPath, "tb_Buff_Script_TWN", new TbBuffScript());
+            ProcessFile<TbBuffScript>(iPath, oPath, "tb_Buff_Script_TWN");
 
             // for tb_Character_Info.res
-            //ProcessFile(path, "tb_Character_Parts", new TbCharacterParts());
+            //ProcessFile<TbCharacterParts>(iPath, oPath, "tb_Character_Parts");
 
             // for tb_ChattingFilter.res
-            ProcessFile(iPath, oPath, "tb_ChattingFilter", new TbChattingFilter());
+            ProcessFile<TbChattingFilter>(iPath, oPath, "tb_ChattingFilter");
 
             // for Tb_Chattingcommand.res
-            ProcessFile(iPath, oPath, "Tb_Chattingcommand", new TbChattingCommand());
+            ProcessFile<TbChattingCommand>(iPath, oPath, "Tb_Chattingcommand");
 
             // for tb_cinema_string.res
-            ProcessFile(iPath, oPath, "tb_Cinema_String_TWN", new TbCinemaString());
+            ProcessFile<TbCinemaString>(iPath, oPath, "tb_Cinema_String_TWN");
 
             // for Tb_Class_Form.res
-            ProcessFile(iPath, oPath, "Tb_Class_Form", new TbClassForm());
+            ProcessFile<TbClassForm>(iPath, oPath, "Tb_Class_Form");
 
             // for Tb_Class_Speech.res
-            ProcessFile(iPath, oPath, "Tb_Class_Speech", new TbClassSpeech());
+            ProcessFile<TbClassSpeech>(iPath, oPath, "Tb_Class_Speech");
 
             // for tb_Cutscene_String.res
-            ProcessFile(iPath, oPath, "tb_Cutscene_String_TWN", new TbCutsceneString());
+            ProcessFile<TbCutsceneString>(iPath, oPath, "tb_Cutscene_String_TWN");
 
             // for tb_item_script.res
-            ProcessFile(iPath, oPath, "tb_item_script_TWN", new TbItemScript());
+            ProcessFile<TbItemScript>(iPath, oPath, "tb_item_script_TWN");
 
             // for tb_LeagueSkill_Script.res
-            ProcessFile(iPath, oPath, "tb_LeagueSkill_Script_TWN", new TbLeagueSkillScript());
+            ProcessFile<TbLeagueSkillScript>(iPath, oPath, "tb_LeagueSkill_Script_TWN");
 
             // for tb_Loading_Img.res
-            //ProcessFile(path, "tb_Loading_Img", new TbLoadingImg());
+            //ProcessFile<TbLoadingImg>(iPath, oPath, "tb_Loading_Img");
 
             // for tb_MazeReward_GoldDirect.res
-            //ProcessFile(path, "tb_MazeReward_GoldDirect", new TbMazeRewardGoldDirect());
+            //ProcessFile<TbMazeRewardGoldDirect>(iPath, oPath, "tb_MazeReward_GoldDirect");
 
             // for tb_Monster_script.res
-            ProcessFile(iPath, oPath, "tb_Monster_script_TWN", new TbMonsterScript());
+            ProcessFile<TbMonsterScript>(iPath, oPath, "tb_Monster_script_TWN");
 
             // for Tb_Namefilter.res
-            ProcessFile(iPath, oPath, "Tb_Namefilter", new TbNameFilter());
+            ProcessFile<TbNameFilter>(iPath, oPath, "Tb_Namefilter");
 
             // for tb_NPC_Script.res
-            ProcessFile(iPath, oPath, "tb_NPC_Script_TWN", new TbNPCScript());
+            ProcessFile<TbNPCScript>(iPath, oPath, "tb_NPC_Script_TWN");
 
             // for tb_Quest_Script.res
-            ProcessFile(iPath, oPath, "tb_Quest_Script_TWN", new TbQuestScript());
+            ProcessFile<TbQuestScript>(iPath, oPath, "tb_Quest_Script_TWN");
 
             // for tb_Shop_String.res
-            ProcessFile(iPath, oPath, "tb_Shop_String_TWN", new TbShopString());
+            ProcessFile<TbShopString>(iPath, oPath, "tb_Shop_String_TWN");
 
             // for tb_Skill.res
-            ProcessFile(iPath, oPath, "tb_Skill", new TbSkill());
+            ProcessFile<TbSkill>(iPath, oPath, "tb_Skill");
 
             // for tb_Skill_Script.res
-            ProcessFile(iPath, oPath, "tb_Skill_Script_TWN", new TbSkillScript());
+            ProcessFile<TbSkillScript>(iPath, oPath, "tb_Skill_Script_TWN");
 
             // for tb_soul_metry.res
-            //ProcessFile(path, "tb_soul_metry", new TbSoulMetry());
+            //ProcessFile<TbSoulMetry>(iPath, oPath, "tb_soul_metry");
 
             // for tb_soul_metry_string.res
-            ProcessFile(iPath, oPath, "tb_soul_metry_string_TWN", new TbSoulMetryString());
+            ProcessFile<TbSoulMetryString>(iPath, oPath, "tb_soul_metry_string_TWN");
 
             // for tb_Speech.res
-            ProcessFile(iPath, oPath, "tb_Speech", new TbSpeech());
+            ProcessFile<TbSpeech>(iPath, oPath, "tb_Speech");
 
             // for tb_Speech_String.res
-            ProcessFile(iPath, oPath, "tb_Speech_String_TWN", new TbSpeechString());
+            ProcessFile<TbSpeechString>(iPath, oPath, "tb_Speech_String_TWN");
 
             // for tb_Speech_tag.res
-            ProcessFile(iPath, oPath, "tb_Speech_tag", new TbSpeechTag());
+            ProcessFile<TbSpeechTag>(iPath, oPath, "tb_Speech_tag");
 
             // for tb_SystemMail.res
-            ProcessFile(iPath, oPath, "tb_SystemMail_TWN", new TbSystemMail());
+            ProcessFile<TbSystemMail>(iPath, oPath, "tb_SystemMail_TWN");
 
             // for Tb_Talk.res
-            ProcessFile(iPath, oPath, "Tb_Talk", new TbTalk());
+            ProcessFile<TbTalk>(iPath, oPath, "Tb_Talk");
 
             // for Tb_Talk_List.res
-            ProcessFile(iPath, oPath, "Tb_Talk_List", new TbTalkList());
+            ProcessFile<TbTalkList>(iPath, oPath, "Tb_Talk_List");
 
             // for Tb_Talk_String.res
-            ProcessFile(iPath, oPath, "Tb_Talk_String", new TbTalkString());
+            ProcessFile<TbTalkString>(iPath, oPath, "Tb_Talk_String");
 
             // for Tb_Title_Info.res
-            ProcessFile(iPath, oPath, "Tb_Title_Info", new TbTitleInfo());
+            ProcessFile<TbTitleInfo>(iPath, oPath, "Tb_Title_Info");
 
             // for tb_Title_String.res
-            ProcessFile(iPath, oPath, "tb_Title_String_TWN", new TbTitleString());
+            ProcessFile<TbTitleString>(iPath, oPath, "tb_Title_String_TWN");
 
             // for tb_Tooltip_String.res
-            ProcessFile(iPath, oPath, "tb_Tooltip_String_TWN", new TbTooltipString());
+            ProcessFile<TbTooltipString>(iPath, oPath, "tb_Tooltip_String_TWN");
 
             // for tb_ui_string.res
-            ProcessFile(iPath, oPath, "tb_ui_string_TWN", new TbUIString());
-            
+            ProcessFile<TbUIString>(iPath, oPath, "tb_ui_string_TWN");
+
             MessageBox.Show("finish");
         }
 
-        private void ProcessFile<T>(string iPath, string oPath, string name, T type) where T : IResReader, new()
+        private void ProcessFile<T>(string iPath, string oPath, string name) where T : IResReader, new()
         {
             string file = name;
             string inputFilename = Path.Combine(iPath, file + ".res");
