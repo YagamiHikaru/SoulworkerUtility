@@ -21,7 +21,7 @@ namespace TitleParser
             {
                 textBox1.Text = value;
                 mTitleInfoFileName = Path.Combine(mInputPath, "Tb_Title_Info.txt");
-                mTitleStringFileName = Path.Combine(mInputPath, "tb_Title_String.txt");
+                mTitleStringFileName = Path.Combine(mInputPath, "tb_Title_String_TWN.txt");
             }
         }
 
@@ -67,7 +67,7 @@ namespace TitleParser
                     throw new System.InvalidOperationException($"輸出目錄不可為空");
 
                 mTitleInfoFileName = Path.Combine(mInputPath, "Tb_Title_Info.txt");
-                mTitleStringFileName = Path.Combine(mInputPath, "tb_Title_String.txt");
+                mTitleStringFileName = Path.Combine(mInputPath, "tb_Title_String_TWN.txt");
 
                 if (!File.Exists(mTitleInfoFileName))
                     throw new System.InvalidOperationException($"{mTitleInfoFileName} 檔案不存在");
@@ -78,8 +78,8 @@ namespace TitleParser
                 GetIdTable(mTitleStringFileName, out title);
                 GetIdTable(mTitleInfoFileName, out titleInfo);
 
-                List<TbTitleInfo> frontTitle = titleInfo.Where(o => (o.id.ToCharArray()[0] == '1')).ToList();
-                List<TbTitleInfo> backTitle = titleInfo.Where(o => (o.id.ToCharArray()[0] == '2')).ToList();
+                List<TbTitleInfo> frontTitle = titleInfo.Where(o => (o.str[1] == "0")).ToList();
+                List<TbTitleInfo> backTitle = titleInfo.Where(o => (o.str[1] == "1")).ToList();
 
                 WritePackage format = (radioButton1.Checked) ? WritePackageFactory.GetInstance(WritePackageFactory.Type.TEXT) :
                                       (radioButton2.Checked) ? WritePackageFactory.GetInstance(WritePackageFactory.Type.CSV) :
