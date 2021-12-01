@@ -36,6 +36,7 @@ namespace CinemaParser
         public string PC_F;
         public string PC_G;
         public string PC_H;
+        public string PC_I;
         public string Mob;
         public string NPC;
 
@@ -49,6 +50,7 @@ namespace CinemaParser
             PC_F = sReader.ReadLine();
             PC_G = sReader.ReadLine();
             PC_H = sReader.ReadLine();
+            PC_I = sReader.ReadLine();
             Mob = sReader.ReadLine();
             NPC = sReader.ReadLine();
         }
