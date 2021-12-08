@@ -17,8 +17,8 @@ namespace CinemaParser
 {
     public partial class Form1 : Form
     {
-        private const string mCinemaIdFileName = "tb_cinema_string.txt";
-        private const string mQuestIdFileName = "tb_quest_script.txt";
+        private const string mCinemaIdFileName = "tb_cinema_string_twn.txt";
+        private const string mQuestIdFileName = "tb_quest_script_twn.txt";
         private static string mSettingFileName = Path.Combine(Application.StartupPath, "Setting.ini");
 
         IniFile ini = new IniFile(mSettingFileName);
@@ -154,6 +154,7 @@ namespace CinemaParser
             pcFiles.Add("PC_F", allFiles.Where(o => (o.IndexOf("PC_F") != -1)).ToArray());
             pcFiles.Add("PC_G", allFiles.Where(o => (o.IndexOf("PC_G") != -1)).ToArray());
             pcFiles.Add("PC_H", allFiles.Where(o => (o.IndexOf("PC_H") != -1)).ToArray());
+            pcFiles.Add("PC_I", allFiles.Where(o => (o.IndexOf("PC_I") != -1)).ToArray());
             return pcFiles;
         }
 
@@ -185,7 +186,8 @@ namespace CinemaParser
                         (PC == "PC_E") ? sentencesList[line.SituationStringStep01_ID].PC_E :
                         (PC == "PC_F") ? sentencesList[line.SituationStringStep01_ID].PC_F :
                         (PC == "PC_G") ? sentencesList[line.SituationStringStep01_ID].PC_G :
-                        sentencesList[line.SituationStringStep01_ID].PC_H;
+                        (PC == "PC_H") ? sentencesList[line.SituationStringStep01_ID].PC_H :
+                        sentencesList[line.SituationStringStep01_ID].PC_I;
 
                     string str = $"{character}({face}):{sentence}";
                     var nEpisodeNumber = line.Maze_EpisodeNumber;
